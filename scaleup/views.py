@@ -5,3 +5,8 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'scaleup/home.html', {})
+
+
+def newscale(request):
+    return render(request, 'scaleup/newscale.html', {})
+    
