@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+{% extends 'scaleup/base.html' %}
 
-  <title>scale generator</title>
-
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-</head>
-<body>
+{% block content %}
   <h1>scale generator</h1>
     
   <form action="/scaleup/newscale">
@@ -17,5 +8,4 @@
     <input type="submit" value="Yes">
   </form>
 
-</body>
-</html>
+{% endblock content %}
