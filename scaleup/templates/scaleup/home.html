@@ -3,9 +3,8 @@
 {% block content %}
   <h1>scale generator</h1>
     
-  <form action="/scaleup/newscale">
-    Would you like to generate a scale?<br>
-    <input type="submit" value="Yes">
-  </form>
+  {% block generate_next %}
+    {{ block.super }}
+  {% endblock generate_next%}
 
 {% endblock content %}

@@ -2,6 +2,10 @@
 
 {% block content %}
 
-testing
+<h3>{{ scale }}</h3>
+<br>
+    {% block generate_next %}
+        {{ block.super }}
+    {% endblock generate_next %}
 
 {% endblock content %}
