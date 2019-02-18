@@ -2,9 +2,13 @@
 
 {% block content %}
   <h1>scale generator</h1>
-    
-  {% block generate_next %}
-    {{ block.super }}
-  {% endblock generate_next%}
+
+  <form action="/scaleup/newscale">
+    <input type="radio" name="user" value="beginner" checked> Beginner<br>
+    <input type="radio" name="user" value="lilit"> Lilit<br>
+    <input type="radio" name="user" value="test"> Test<br>
+    <input type="submit" value="Submit">
+
+  </form>
 
 {% endblock content %}
