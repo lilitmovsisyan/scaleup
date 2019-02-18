@@ -1,14 +1,11 @@
 {% extends 'scaleup/base.html' %}
 
 {% block content %}
-  <div class="container">
-    <h1>scale generator</h1>
+  <div class="card">
+    <h5 class="card-header">scale generator</h5>
+    
+    {% block generate_next %}
+      {{ block.super }}
+    {% endblock generate_next%}
   </div>
-
-  <br>
-  
-  {% block generate_next %}
-    {{ block.super }}
-  {% endblock generate_next%}
-
 {% endblock content %}

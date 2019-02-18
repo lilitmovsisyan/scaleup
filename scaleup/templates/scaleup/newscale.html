@@ -2,13 +2,11 @@
 
 {% block content %}
 
-<div class="container">
-    <h3>{{ scale }}</h3>
-</div>
-<br>
+<div class="card">
+    <h5 class="card-header">{{ scale }}</h5>
 
     {% block generate_next %}
         {{ block.super }}
     {% endblock generate_next %}
-
+</div>
 {% endblock content %}

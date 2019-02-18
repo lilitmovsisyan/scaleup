@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +13,19 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+  <!-- Load static CSS file (imported at the top of this file with {% load static %})-->
+  <link rel="stylesheet" href="{% static '../scaleup/style.css' %}">
+
 </head>
 <body>
 
   {% block content %}
 
   {% block generate_next %}
-    <div id="generate_next" class="container">
+    <div id="generate_next" class="card-body">
       <form action="/scaleup/newscale">
-        Would you like to generate a scale?<br><br>
-        <input type="submit" value="Yes">
+        <p class="xard-text">Would you like to generate a scale?</p>
+        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Bring it on!">
       </form>
     </div>
   {% endblock generate_next %}
