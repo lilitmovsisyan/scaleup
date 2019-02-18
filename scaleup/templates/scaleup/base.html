@@ -8,19 +8,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
 </head>
 <body>
 
   {% block content %}
 
-    <div id="generate_next">
-      {% block generate_next %}
+  {% block generate_next %}
+    <div id="generate_next" class="container">
       <form action="/scaleup/newscale">
-        Would you like to generate a scale?<br>
+        Would you like to generate a scale?<br><br>
         <input type="submit" value="Yes">
       </form>
-      {% endblock generate_next %}
     </div>
+  {% endblock generate_next %}
 
   {% endblock content %}
 

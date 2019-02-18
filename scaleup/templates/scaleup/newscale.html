@@ -2,8 +2,11 @@
 
 {% block content %}
 
-<h3>{{ scale }}</h3>
+<div class="container">
+    <h3>{{ scale }}</h3>
+</div>
 <br>
+
     {% block generate_next %}
         {{ block.super }}
     {% endblock generate_next %}
