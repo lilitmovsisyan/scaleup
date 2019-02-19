@@ -5,7 +5,13 @@
     <h5 class="card-header">scale generator</h5>
     
     {% block generate_next %}
-      {{ block.super }}
+    <form action="/scaleup/newscale">
+      <input type="radio" name="user" value="beginner" checked> Beginner<br>
+      <input type="radio" name="user" value="lilit"> Lilit<br>
+      <input type="radio" name="user" value="test"> Test<br>
+      <input type="submit" value="Submit">
+  
+    </form>
     {% endblock generate_next%}
   </div>
 {% endblock content %}

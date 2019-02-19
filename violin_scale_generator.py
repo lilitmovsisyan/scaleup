@@ -15,7 +15,7 @@ Enter your name below to generate a scale out of the ones you are familiar with.
 
 #scale sets:
 chroma_tones = ["A","B","C","D","E","F","G","Ab/G#","Bb/A#","Db/C#","Eb/D#","F#/Gb"]
-beginner = ["G", "D", "A"]
+beginner_scales = ["G", "D", "A"]
 
 #mode sets:
 major_only = ["major", "major arpeggio", "chromatic scale"]
@@ -32,8 +32,8 @@ lilit = {
     "my_mode": more_minors,
     "my_bow_pattern": main_bowing
     }
-beginners = {
-    "my_scale_set": beginner,
+beginner = {
+    "my_scale_set": beginner_scales,
     "my_mode": major_only,
     "my_bow_pattern": main_bowing
     }
@@ -46,7 +46,7 @@ test = {
 #database of all users:
 user_list = {
     "lilit":lilit,
-    "beginner": beginners,
+    "beginner": beginner,
     "test": test
     }
 
