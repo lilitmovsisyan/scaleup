@@ -1,12 +1,5 @@
 {% extends 'scaleup/base.html' %}
 
 {% block content %}
-
-<div class="card">
-    <h5 class="card-header">{{ scale }}</h5>
-
-    {% block generate_next %}
-        {{ block.super }}
-    {% endblock generate_next %}
-</div>
+    {{ block.super }}
 {% endblock content %}

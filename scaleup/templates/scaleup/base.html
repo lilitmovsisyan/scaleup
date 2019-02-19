@@ -19,7 +19,12 @@
 </head>
 <body>
 
-  {% block content %}
+{% block content %}
+
+  {% block header %}
+    <div class="card">
+      <h5 class="card-header">{{ header }}</h5>  
+  {% endblock header %}
 
   {% block generate_next %}
     <div id="generate_next" class="card-body">
@@ -30,7 +35,10 @@
     </div>
   {% endblock generate_next %}
 
-  {% endblock content %}
+  {% block close_card %}
+  </div>
+  {% endblock close_card %}
 
+{% endblock content %}
 </body>
 </html>

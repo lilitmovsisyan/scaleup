@@ -6,14 +6,14 @@ from scaleup.scale_data import user_list
 # Create your views here.
 
 def home(request):
-    return render(request, 'scaleup/home.html', {})
+    return render(request, 'scaleup/home.html', {"header": 'scale generator'})
 
 
 def newscale(request):
     user = request.GET.get('user', '')
     scale = users_random_scale(user_list[user])
-    return render(request, 'scaleup/newscale.html', {"scale": scale, "user": user})
+    return render(request, 'scaleup/newscale.html', {"header": scale, "user": user})
 
 def nextscale(request, user):
     scale = users_random_scale(user_list[user])
-    return render(request, 'scaleup/newscale.html', {"scale": scale, "user": user})
+    return render(request, 'scaleup/newscale.html', {"header": scale, "user": user})

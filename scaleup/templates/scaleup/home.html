@@ -1,10 +1,11 @@
 {% extends 'scaleup/base.html' %}
 
 {% block content %}
-  <div class="card">
-    <h5 class="card-header">scale generator</h5>
-    
-    {% block generate_next %}
+  {% block header %}
+    {{ block.super }}
+  {% endblock header %}
+
+  {% block generate_next %}
     <div id="generate_next" class="card-body">
 
       <form action="/scaleup/newscale">
@@ -15,6 +16,10 @@
     
       </form>
     </div>
-    {% endblock generate_next%}
-  </div>
+  {% endblock generate_next%}
+
+  {% block close_card %}
+    {{ block.super }}
+  {% endblock close_card %}
+
 {% endblock content %}
