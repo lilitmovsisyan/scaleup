@@ -15,7 +15,7 @@
 
     <div id="generate_next">
       {% block generate_next %}
-      <form action="/scaleup/newscale">
+      <form action="/scaleup/newscale/{{ user }}">
         Would you like to generate a scale?<br>
         <input type="submit" value="Yes">
       </form>

@@ -11,5 +11,8 @@ def home(request):
 def newscale(request):
     user = request.GET.get('user', '')
     scale = users_random_scale(user_list[user])
-    return render(request, 'scaleup/newscale.html', {"scale": scale})
-    
+    return render(request, 'scaleup/newscale.html', {"scale": scale, "user": user})
+
+def nextscale(request, user):
+    scale = users_random_scale(user_list[user])
+    return render(request, 'scaleup/newscale.html', {"scale": scale, "user": user})
