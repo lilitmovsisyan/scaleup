@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from scale_gen import users_random_scale
-from scaleup/scale_data import user_list
+from scaleup.scale_gen import users_random_scale
+from scaleup.scale_data import user_list
 # from django.http import HttpResponse
 
 # Create your views here.
