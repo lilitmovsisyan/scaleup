@@ -1,17 +1,15 @@
 body {
     text-align: center;
     padding-top: 25px;
-    background-color: aquamarine;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(191, 206, 212);
 }
 
-.mt-10 {
-    margin-top: 
+.card-header {
+    background-color: rgb(195, 217, 235);
 }
 
-h3 {
-    color: red;
-}
-
-p {
-    color: green;
+.card-text {
+    background-color: aliceblue;
 }
