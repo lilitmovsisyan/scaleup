@@ -23,7 +23,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
-    path('scaleup', include('scaleup.urls')),
+    path('scaleup/', include('scaleup.urls')),
     path('admin/', admin.site.urls),
 ]
 
