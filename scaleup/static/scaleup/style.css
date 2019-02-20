@@ -3,13 +3,13 @@ body {
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: rgb(191, 206, 212);
+    background-color: rgb(227, 243, 250);
 }
 
 .card-header {
-    background-color: rgb(195, 217, 235);
+    background-color: rgb(181, 247, 252);
 }
 
-.card-text {
+.card {
     background-color: aliceblue;
 }
